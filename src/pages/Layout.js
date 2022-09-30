@@ -1,17 +1,17 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 const Layout = () =>{
  return <div>
     <nav>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <NavLink end className={({isActive}) => isActive ? 'active-green' : null} to="/">Home</NavLink>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <NavLink className={({isActive}) => isActive ? 'active-green' : null} to="/about">About</NavLink>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <NavLink className={({isActive}) => isActive ? 'active-green' : null} to="/dashboard">Dashboard</NavLink>
           </li>
         </ul>
     </nav>
