@@ -5,6 +5,9 @@ import About  from "./pages/About";
 import Home  from "./pages/Home";
 import Default  from "./pages/Default";
 import Dashboard  from "./pages/Dashboard";
+import Product  from "./pages/Product";
+import ProductDetails from './pages/ProductDetails';
+
 function App() {
   return (
     <div>
@@ -14,6 +17,8 @@ function App() {
            <Route path="about" element={<About />} />
            <Route path="/" element={<Home />} />
            <Route path="dashboard" element={<Dashboard />} />
+            <Route path="products" element={<Product />} />
+            <Route path="products/:prodcutId" element={<ProductDetails />} />
            <Route path="*" element={<Default />} />
         </Route>
       </Routes>

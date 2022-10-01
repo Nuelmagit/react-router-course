@@ -5,13 +5,16 @@ const Layout = () =>{
     <nav>
         <ul>
           <li>
-            <NavLink end className={({isActive}) => isActive ? 'active-green' : null} to="/">Home</NavLink>
+            <NavLink end to="/">Home</NavLink>
           </li>
           <li>
-            <NavLink className={({isActive}) => isActive ? 'active-green' : null} to="/about">About</NavLink>
+            <NavLink to="/about">About</NavLink>
           </li>
           <li>
-            <NavLink className={({isActive}) => isActive ? 'active-green' : null} to="/dashboard">Dashboard</NavLink>
+            <NavLink to="/dashboard">Dashboard</NavLink>
+          </li>
+          <li>
+            <NavLink end to="/products">Products</NavLink>
           </li>
         </ul>
     </nav>
